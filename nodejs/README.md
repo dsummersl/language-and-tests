@@ -9,7 +9,8 @@ cd nodejs
 npm init -f
 ```
 
-Rather than pick a build tool like gulp/grunt, this just uses npm.
+Rather than pick a build tool like gulp/grunt, this just uses npm for qiuck/fast
+setup.
 
 Mocha & Chai
 ------------
@@ -38,4 +39,13 @@ describe('example', function() {
     (true).should.equal(true);
   });
 });" > tests/tests.js
+```
+
+If you wanna set it up in git:
+
+```bash
+git init
+echo "node_modules" > .gitignore
+git add README.md tests package.json .gitignore
+git commit -m "Sets up mocha testing"
 ```
