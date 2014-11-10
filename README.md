@@ -10,6 +10,7 @@ Instructions:
  * [Groovy](groovy/README.md)
  * [Nodejs](nodejs/README.md)
  * [Python](python/README.md)
+ * [Scala](scala/README.md)
 
 Layout
 ------
