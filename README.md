@@ -11,6 +11,7 @@ Instructions:
  * [Java](java/README.md)
  * [Nodejs](nodejs/README.md)
  * [Python](python/README.md)
+ * [Ruby](ruby/README.md)
  * [Scala](scala/README.md)
 
 Layout
