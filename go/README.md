@@ -1,6 +1,9 @@
 Go
 ==
 
+Build
+-----
+
 ```bash
 cat > example_test.go <<END
 package example
@@ -15,13 +18,15 @@ func TestExample(t *testing.T) {
 END
 ```
 
-To run the tests:
+Test
+----
 
 ```bash
 go test
 ```
 
-Add to Git:
+Git
+---
 
 ```bash
 git init

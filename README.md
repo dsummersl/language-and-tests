@@ -5,6 +5,7 @@ This repository contains quick copy/paste instructions to setup a new project
 with unit testing.
 
 Instructions:
+ * [Clojure](clojure/README.md)
  * [Go](go/README.md)
  * [Nodejs](nodejs/README.md)
 
