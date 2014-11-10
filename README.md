@@ -8,6 +8,7 @@ Instructions:
  * [Clojure](clojure/README.md)
  * [Go](go/README.md)
  * [Nodejs](nodejs/README.md)
+ * [Python](python/README.md)
 
 Layout
 ------
