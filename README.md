@@ -8,6 +8,7 @@ Instructions:
  * [Clojure](clojure/README.md)
  * [Go](go/README.md)
  * [Groovy](groovy/README.md)
+ * [Java](java/README.md)
  * [Nodejs](nodejs/README.md)
  * [Python](python/README.md)
  * [Scala](scala/README.md)
