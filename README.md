@@ -7,6 +7,7 @@ with unit testing.
 Instructions:
  * [Clojure](clojure/README.md)
  * [Go](go/README.md)
+ * [Groovy](groovy/README.md)
  * [Nodejs](nodejs/README.md)
  * [Python](python/README.md)
 
