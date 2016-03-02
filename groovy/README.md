@@ -7,6 +7,9 @@ Build
 Uses [GvmTool](http://gvmtool.net) to setup gradle.
 
 ```bash
+mkdir groovy-example
+cd groovy-example
+
 sdk use gradle 2.11
 sdk use groovy 2.4.6
 
