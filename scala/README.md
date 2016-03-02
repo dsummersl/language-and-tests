@@ -7,7 +7,10 @@ Build
 Uses [GvmTool](http://gvmtool.net) to configure/setup gradle.
 
 ```bash
-gvm use gradle 2.1
+mkdir scala-example
+cd scala-example
+
+sdk use gradle 2.1
 
 gradle init --type=scala-library
 ```
@@ -23,7 +26,10 @@ Git
 ---
 
 ```bash
-git add .
-git commit -m "Adds gradle's scala library template."
+git init
+echo .gradle > .gitignore
+echo build >> .gitignore
+git add gradle* src build.gradle settings.gradle .gitignore
+git commit -m "Adds sample files"
 ```
 

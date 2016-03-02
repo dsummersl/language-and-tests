@@ -4,11 +4,11 @@ Groovy
 Build
 -----
 
-Uses [GvmTool](http://gvmtool.net) to configure/setup gradle.
+Uses [GvmTool](http://gvmtool.net) to setup gradle.
 
 ```bash
-gvm use gradle 2.1
-gvm use groovy 2.3.7
+sdk use gradle 2.11
+sdk use groovy 2.4.6
 
 gradle init --type=groovy-library
 ```
@@ -24,6 +24,9 @@ Git
 ---
 
 ```bash
-git add .
-git commit -m "Adds gradle's groovy library template."
+git init
+echo .gradle > .gitignore
+echo build >> .gitignore
+git add gradle* src build.gradle settings.gradle .gitignore
+git commit -m "Adds sample files"
 ```

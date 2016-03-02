@@ -5,13 +5,24 @@ Build
 -----
 
 ```bash
+mkdir go-example
+cd go-example
+
+cat > example.go <<END
+package example
+
+func exampleFunction() error {
+  return nil
+}
+END
+
 cat > example_test.go <<END
 package example
 
 import "testing"
 
 func TestExample(t *testing.T) {
-  if false {
+  if exampleFunction() != nil {
     t.Errorf("It didn't work!")
   }
 }
@@ -30,6 +41,6 @@ Git
 
 ```bash
 git init
-git add example_test.go
-git commit -m "Adds sample test"
+git add .
+git commit -m "Adds sample files"
 ```

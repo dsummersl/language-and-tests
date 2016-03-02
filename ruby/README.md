@@ -4,16 +4,32 @@ Ruby
 Build
 -----
 
-Uses [Bundler](http://bundler.io/) to manage dependencies.
+Uses [Bundler](http://bundler.io/) to manage dependencies and [rvm](https://rvm.io/) to manage the ruby version.
 
 ```bash
-echo "source 'https://rubygems.org'\ngem 'rspec'" > Gemfile
+mkdir ruby-example
+cd ruby-example
+
+rvm --ruby-version use 1.9.3
+echo "ruby '1.9.3'\nsource 'https://rubygems.org'\ngem 'rspec'" > Gemfile
+
+gem install bundler
 bundle install
+
+mkdir example
+cat > example/script.rb <<END
+def foo()
+  return true
+end
+END
+
 rspec --init
 cat > spec/example_spec.rb <<END
+require './example/script.rb'
+
 describe "Example" do
-  it "returns 1" do
-    expect(1).to eq(1)
+  it "foo()returns true" do
+    expect(foo()).to eq(true)
   end
 end
 END
@@ -30,6 +46,7 @@ Git
 ---
 
 ```bash
-git add .rspec spec Gemfile Gemfile.lock
-git commit -m "Adds rspec sample tests"
+git init
+git add .rspec .ruby-version example spec Gemfile Gemfile.lock
+git commit -m "Adds sample files"
 ```
